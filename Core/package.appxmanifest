@@ -1,48 +1,27 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="http://schemas.microsoft.com/appx/2010/manifest">
-
-  <Identity
-    Name="06eda60c-0e1c-4af7-8fad-6b0e80e24030"
-    Version="1.0.0.0"
-    Publisher="CN=Jeff" />
-
+  <Identity Name="06eda60c-0e1c-4af7-8fad-6b0e80e24030" Version="0.1.0.0" Publisher="CN=Jeff" />
   <Properties>
-    <DisplayName>Core</DisplayName>
+    <DisplayName>My Recipes</DisplayName>
     <PublisherDisplayName>Jeff</PublisherDisplayName>
     <Logo>images\storelogo.png</Logo>
   </Properties>
-
   <Prerequisites>
     <OSMinVersion>6.2.1</OSMinVersion>
     <OSMaxVersionTested>6.2.1</OSMaxVersionTested>
   </Prerequisites>
-
   <Resources>
     <Resource Language="x-generate" />
   </Resources>
-
   <Applications>
-    <Application 
-      Id="App"
-      StartPage="default.html">
-
-      <VisualElements
-        DisplayName="Core"
-        Logo="images\logo.png"
-        SmallLogo="images\smalllogo.png"
-        Description="Core"
-        ForegroundText="light"
-        BackgroundColor="#464646">
-
-        <DefaultTile ShowName="allLogos" />
+    <Application Id="App" StartPage="default.html">
+      <VisualElements DisplayName="My Recipes" Logo="images\logo.png" SmallLogo="images\smalllogo.png" Description="Recipes" ForegroundText="light" BackgroundColor="#464646">
+        <DefaultTile ShowName="allLogos" ShortName="Recipes" />
         <SplashScreen Image="images\splashscreen.png" />
-
       </VisualElements>
     </Application>
   </Applications>
-
   <Capabilities>
     <Capability Name="internetClient" />
   </Capabilities>
-
 </Package>
